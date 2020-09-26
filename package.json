@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/oliveirasantos-vm/GardenShop/issues"
   },
-  "homepage": "https://github.com/oliveirasantos-vm/GardenShop#readme"
+  "homepage": "https://github.com/oliveirasantos-vm/GardenShop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
