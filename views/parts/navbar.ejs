@@ -1,36 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-dark shadow mb-5" style="background-color: #64B432;">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a href="/">
-        <img src="/images/logo-light.svg" height="60" class="d-inline-block align-top" alt="logotipo">
-    </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Início<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Categoria
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="/categoria">Orquídea</a>
-                    <a class="dropdown-item" href="/categoria">Bambu</a>
-                    <a class="dropdown-item" href="/categoria">Suculenta</a>
-                </div>
-            </li>
-        </ul>
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="/">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/">Cadastrar</a>
-            </li>
-
-        </ul>
-    </div>
+<nav class="navtop">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"><img src="/images/logo-light.svg" alt="logo-light.svg"></label>
+    <ul class="nav-items">
+        <li><a href="/">Início</a></li>
+        <li><a href="#">Categorias</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#" class="auth-mobile">Login</a></li>
+        <li><a href="#" class="auth-mobile">Sigin</a></li>
+        <div class="auth-desktop">
+            <li><a href="#">Login</a></li>
+            <span class="nav-divisor">|</span>
+            <li><a href="#">Sigin</a></li>
+        </div>
+    </ul>
 </nav>
