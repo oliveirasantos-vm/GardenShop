@@ -10,6 +10,9 @@ app.set('views', './views');
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+const auth_module = require('./routes/authRoute');
+app.use('/autenticar', auth_module);
+
 const system_module = require('./routes/systemRoute');
 app.use(system_module);
 

@@ -1,6 +1,18 @@
 <%- include('parts/head')%>
+<link rel='stylesheet' type='text/css' media='screen' href='/css/404.css'>
+<link rel='stylesheet' type='text/css' media='screen' href='/css/nav.css'>
 </head>
+
 <body>
-    <h1>Error 404</h1>
+    <%- include('parts/navbar') %>
+
+    <div class="error-content">
+        <div class="error-title">404</div>
+        <div class="error-subtitle">Oops... Será que você não se enganou?</div><br>
+        <div class="error-paragraph">
+            Não conseguimos encontrar sua requisição, poderia revisar sua URL?
+        </div>
+    </div>
 </body>
+
 </html>

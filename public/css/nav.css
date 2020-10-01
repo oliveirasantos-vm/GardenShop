@@ -6,9 +6,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-}
 
 /*#003200 verde escuro
 #64b432 verde grama
@@ -19,6 +16,7 @@ body {
     background: #64b432;
     height: 70px;
     width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
 }
 
 .logo img {
@@ -39,6 +37,7 @@ body {
     display: inline-block;
     line-height: 70px;
     font-size: 17px;
+    margin-right: 10px;
 }
 
 
@@ -80,25 +79,6 @@ a.active, a:hover {
 
 .auth-mobile{
     display: none;
-}
-@media (min-width: 952px) {
-    .nav-items li {
-        display: inline-block;
-        line-height: 70px;
-        font-size: 17px;
-        margin-right: 10px;
-    }
-}
-@media (max-width: 952px) {
-    label.logo img {
-        height: 45px;
-        padding-left: 20px;
-        margin-top: 12.5px;
-        margin-bottom: 12.5px;
-    }
-    nav ul li a {
-        font-size: 16px;
-    }
 }
 @media (max-width: 858px) {
     .checkbtn{
