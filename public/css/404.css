@@ -1,19 +1,39 @@
-.error-content{
-    margin-left: auto;
-    margin-right: auto;
-    width: 700px;
-    
+.error-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
-.error-title{
+
+.content {
+    display: table;
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.error-content {
+    width: 700px;
+    height: 300px;
+}
+
+.error-title {
     font-size: 150px;
     font-weight: 900;
     text-align: center;
     color: #003200;
 }
-.error-paragraph{
+
+.error-paragraph {
     text-align: center;
 }
-.error-subtitle{
+
+.error-subtitle {
     text-align: center;
     font-size: 25px;
     font-weight: 600;
@@ -21,16 +41,34 @@
 }
 
 @media (max-width: 858px) {
-    .error-content{
+    
+    .error-content {
         width: 400px;
     }
-    .error-title{
+    .error-title {
         text-align: center;
     }
-    .error-paragraph{
+    .error-paragraph {
         font-size: 16px;
     }
-    .error-subtitle{
+    .error-subtitle {
         font-size: 18px;
     }
+}
+@media (max-width: 412px) {
+    .error-content {
+        width: 280px;
+    }
+    .error-title {
+        font-size: 120px;
+        text-align: center;
+    }
+    .error-paragraph {
+        font-size: 16px;
+    }
+    .error-subtitle {
+
+        font-size: 18px;
+    }
+    
 }

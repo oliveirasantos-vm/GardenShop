@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 /*#003200 verde escuro
 #64b432 verde grama
 #96c85a verde pistache
@@ -40,9 +39,8 @@
     margin-right: 10px;
 }
 
-
 .auth-desktop {
-    position: fixed;
+    position: absolute;
     right: 30px;
     top: 0
 }
@@ -77,11 +75,12 @@ a.active, a:hover {
     display: none;
 }
 
-.auth-mobile{
+.auth-mobile {
     display: none;
 }
+
 @media (max-width: 858px) {
-    .checkbtn{
+    .checkbtn {
         display: block;
     }
     ul {
@@ -93,31 +92,30 @@ a.active, a:hover {
         left: -100%;
         text-align: center;
         transition: all .5s;
-        
+        z-index: 50;
         padding: none;
         margin: none;
-        
     }
-    .auth-mobile{
+    .auth-mobile {
         display: block;
     }
-    .auth-desktop{
+    .auth-desktop {
         display: none;
     }
     nav ul li {
         line-height: 30px;
     }
-    nav ul li a{
+    nav ul li a {
         display: block;
         font-size: 20px;
     }
-    li{
+    li {
         width: 100%;
     }
-    a:active, a:hover{
+    a:active, a:hover {
         color: #64b432;
     }
-    #check:checked ~ ul {
+    #check:checked~ul {
         left: 0;
     }
 }
