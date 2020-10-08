@@ -75,6 +75,10 @@ button.ghost:hover {
     width: 50px;
 }
 
+.social-container a:hover {
+    background-color: #015c01;
+}
+
 .social {
     text-decoration: none;
     font-size: 20px;
@@ -92,7 +96,12 @@ button.ghost:hover {
 
 .forgot-password:hover {
     cursor: pointer;
-    color: #014601;
+    color: #015c01;
+}
+
+.forgot-password:focus{
+    outline: none;
+    color: #015c01;
 }
 
 /*login container*/
@@ -121,6 +130,9 @@ input {
     padding: 12px 15px;
     margin: 8px 0;
     width: 80%;
+}
+input:focus {
+    outline: none;
 }
 
 /*signup container*/
