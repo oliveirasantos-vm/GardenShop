@@ -1,7 +1,7 @@
 <%- include('parts/head')%>
 <link rel='stylesheet' type='text/css' media='screen' href='/css/login.css'>
 <link rel='stylesheet' type='text/css' media='screen' href='/css/nav.css'>
-
+<script src="http://rickharrison.github.io/validate.js/validate.min.js"></script>
 </head>
 
 <body>
@@ -13,15 +13,15 @@
                 <form class='login-form' action="/autenticar/login" method="POST">
                     <h1 class="title-login">Entrar</h1>
                     <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="/autenticar/facebook" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="/autenticar/google" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="/autenticar/linkedin" class="social"><i class="fab fa-twitter"></i></a>
                     </div>
 
                     <span class="label-login">ou use a sua conta...</span>
                     <br>
-                    <input type="email" placeholder="Email" required/>
-                    <input type="password" placeholder="Password" required/><br>
+                    <input type="email" placeholder="Email" required />
+                    <input type="password" placeholder="Senha" required /><br>
                     <a class="forgot-password" href="/autenticar/esqueceuasenha">Esqueceu sua senha?</a>
                     <br>
                     <button type="submit">Entrar</button>

@@ -9,6 +9,7 @@
     right: 20%;
     width: 60%;
     margin-top: 80px;
+    margin-bottom: 80px;
     line-height: 1.5;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     border-radius: 10px;
@@ -99,7 +100,7 @@ button.ghost:hover {
     color: #015c01;
 }
 
-.forgot-password:focus{
+.forgot-password:focus {
     outline: none;
     color: #015c01;
 }
@@ -110,8 +111,8 @@ button.ghost:hover {
     position: relative;
     background-color: #d8e2cf;
     color: #001800;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -129,8 +130,9 @@ input {
     border: none;
     padding: 12px 15px;
     margin: 8px 0;
-    width: 80%;
+    width: 100%;
 }
+
 input:focus {
     outline: none;
 }
@@ -139,7 +141,12 @@ input:focus {
 
 .signup-container {
     position: relative;
-    background-image: linear-gradient(to right, #478024, #64b432);
+    background-image: linear-gradient(to right, rgba(38, 68, 19, 0.7), rgba(100, 180, 50, 0.7)), url("/images/login-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
     color: #fff;
     padding-right: 20px;
     padding-left: 20px;
@@ -148,6 +155,7 @@ input:focus {
     display: flex;
     align-items: center;
 }
+
 .signup-panel {
     margin-right: auto;
     margin-left: auto;
@@ -163,7 +171,7 @@ input:focus {
         left: 0%;
         right: 0%;
         width: 100%;
-        margin-top:0;
+        margin-top: 0;
         -webkit-transform: none;
         -moz-transform: none;
         transform: none;

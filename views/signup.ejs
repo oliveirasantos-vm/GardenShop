@@ -1,12 +1,45 @@
 <%- include('parts/head')%>
 <link rel='stylesheet' type='text/css' media='screen' href='/css/nav.css'>
-
+<link rel='stylesheet' type='text/css' media='screen' href='/css/signup.css'>
+<script type="text/javascript" src="/javascript/signup.js"></script>
 </head>
 
 <body>
     <%- include('parts/navbar') %>
-    <h1>Hello word!</h1>
-    
+    <section>
+        <div class="container">
+            <div class="signup-container">
+                <form id='signup-form' class='signup-form' action="/autenticar/cadastrar" method="POST">
+                    <h1 class="title-signup">Cadastrar</h1>
+                    <br>
+                    <div class="errors">
+                        
+                    </div>
+
+                    <div>
+                        <div class="form-names">
+                        <input id="firstname" name="firstname" type="text" placeholder="Nome"  />
+                        <input id="lastname" name="lastname" type="text" placeholder="Sobrenome"  />
+                    </div>
+                        <input id="email" name="email" type="email" placeholder="Email"  />
+                        <input id="pass" name="pass" type="password" placeholder="Senha"  /><i class="fas fa-eye  eye" id="eye_firstname"></i><i class="fas fa-eye-slash eye_firstname eye"></i>
+                        <input id="cpass" name="cpass" type="password" placeholder="Confirmar Senha"  /><i class="fas fa-eye  eye"id="eye_lastname"></i><i class="fas fa-eye-slash eye_firstname eye"></i>
+                        <button id="btn" class="registerbtn" type="submit">Cadastrar</button><br>
+                        <br>
+                        <span class="label-or">ou use o seu...</span>
+                        <div class="social-container">
+                            <a href="/autenticar/facebook" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="/autenticar/google" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="/autenticar/linkedin" class="social"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <span class="label-login">Já tem uma conta? <a class="link-login" href="/autenticar/entrar">Entrar</a></span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="decoration-container"></div>
+        </div>
+    </section>
 </body>
 
 </html>
